@@ -1,0 +1,9 @@
+printer
+television
+microwave oven
+coffeemaker
+dishwasher
+refrigerator
+sink
+bed
+sofa bed

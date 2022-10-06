@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/root_container_video"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+
+        android:background="@android:color/black">
+
+        <VideoView
+            android:id="@+id/video_player"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true" />
+
+        <RelativeLayout
+            android:id="@+id/media_controller_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <ImageButton
+                android:id="@+id/btn_close"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="17dp"
+                android:layout_toStartOf="@+id/test_button"
+                android:layout_toEndOf="@+id/resume_play"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_close_white_48dp"
+                android:tag="Click" />
+
+            <ImageButton
+                android:id="@+id/fullscreen_2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:background="@android:color/white"
+                android:tag="Click"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/ic_alarm_add_white_24dp" />
+
+            <Button
+                android:id="@+id/replay"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="50dp"
+                android:text="R"
+                android:visibility="invisible" />
+
+            <ImageButton
+                android:id="@+id/minimize_2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:layout_alignParentRight="true"
+                android:background="@android:color/transparent"
+                android:paddingRight="10dp"
+                android:tag="Click"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/ic_video_library_white_48dp" />
+
+            <Button
+                android:id="@+id/test_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="Pause" />
+
+            <Button
+                android:id="@+id/resume_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="Play" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

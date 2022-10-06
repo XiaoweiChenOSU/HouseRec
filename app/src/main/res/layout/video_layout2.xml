@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/FrameLayout_VideoView_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/root_container_videoView"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:background="@android:color/black">
+
+        <VideoView
+            android:id="@+id/video_player"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true" />
+
+        <RelativeLayout
+            android:id="@+id/media_controller"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/fowardbtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="0dp"
+                android:layout_toEndOf="@+id/backbtn"
+                android:src="@drawable/skip_foward_small_n" />
+
+            <ImageButton
+                android:id="@+id/backbtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/skip_back_small_n" />
+
+            <ImageButton
+                android:id="@+id/test_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="0dp"
+                android:background="@android:color/white"
+                android:src="@drawable/pausemedia"/>
+
+            <ImageButton
+                android:id="@+id/btn_close"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="0dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_close_white_48dp"
+                android:tag="Click" />
+
+            <ImageButton
+                android:id="@+id/replay"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:layout_alignParentRight="true"
+
+
+                android:layout_marginEnd="66dp"
+                android:layout_marginRight="106dp"
+                android:layout_toStartOf="@+id/FullscreenButton"
+                android:background="@android:color/white"
+                android:src="@drawable/reloading_arrow_png"
+                android:tag="Click" />
+
+            <ImageButton
+                android:id="@+id/resume_play"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/transparent"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="0dp"
+                android:paddingRight="10dp"
+                android:tag="Click"
+                android:src="@drawable/ic_video_library_white_48dp" />
+
+
+
+            <ImageButton
+                android:id="@+id/FullscreenButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="0dp"
+                android:background="@color/mdtp_white"
+                android:src="@drawable/fullscreen_button" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

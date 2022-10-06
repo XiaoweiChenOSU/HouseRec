@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.okstate.VisualComputingandImageProcessingLab.HouseRec">
+
+    <uses-sdk />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <permission android:name="android.permission.FLASHLIGHT"
+        android:permissionGroup="android.permission-group.HARDWARE_CONTROLS"
+        android:protectionLevel="normal" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <permission android:name="android.permission.FLASHLIGHT"
+        android:permissionGroup="android.permission-group.HARDWARE_CONTROLS"
+        android:protectionLevel="normal" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/home"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:theme="@style/AppThemeTranslucent">
+<!--        android:icon="@mipmap/ic_launcher"-->
+<!--        android:label="@string/app_name"-->
+        <service android:name="io.hamed.floatinglayout.service.FloatingService"/>
+<!--        android:theme="@style/AppTheme">-->
+
+        <activity
+            android:name=".Main.MainActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeTranslucent"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".AddToDo.AddToDoActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".Main.MainActivity"
+            />
+        <service android:name=".camerapip"
+            android:enabled="true"
+
+            android:exported="false"/>
+        <activity android:name=".Layout.ItemListActivity" />
+        <activity android:name=".Layout.ItemPhotosActivity" />
+        <activity android:name=".Layout.GalleryActivity" />
+        <activity
+            android:name=".Layout.ItemDetailActivity"
+            android:label="@string/title_item_detail"
+            android:parentActivityName=".Layout.ItemListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Layout.ItemListActivity" />
+        </activity>
+        <activity android:name=".CameraActivity"
+            android:supportsPictureInPicture="true"
+            android:configChanges=
+                "screenSize|smallestScreenSize|screenLayout|orientation"/>
+        <activity android:name=".Reminder.ReminderActivity"
+            android:label="@string/app_name"
+            />
+
+
+        <activity
+            android:name=".ClassifierActivity"
+            android:label="@string/tfe_ic_app_name"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".Layout.AddItems_TempTest"
+            android:label="Item Recorder"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".Layout.ItemListActivity" />
+
+        <activity android:name=".Layout.AddItems_TempTest2"
+            android:label="Item Recorder"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".Layout.ItemListActivity"
+            />
+        <activity android:name=".Layout.PopUpClass"
+            android:label="PopUp"
+
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".Layout.AddItems_TempTest"
+            android:screenOrientation="portrait"/>
+
+
+        <activity android:name=".Layout.ManageVideoActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:label="Video Management" />
+
+        <service android:name=".Utility.TodoNotificationService"
+            />
+        <service android:name=".Utility.DeleteNotificationService"
+            />
+
+        <service android:name=".CameraService"
+            />
+
+    </application>
+
+
+
+</manifest>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbarStyle="insideOverlay"
+    android:visibility="visible"
+    tools:ignore="SpeakableTextPresentCheck">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:scrollbarStyle="insideOverlay">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:scrollbarStyle="insideOverlay">
+
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapWords"
+                    android:padding="10dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    tools:text="Context Name"
+                    android:imeOptions="actionDone" />
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+<!--                <TableRow-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/textView"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="0"-->
+<!--                        android:padding="10dp"-->
+<!--                        android:text="Assistance Type:" />-->
+
+<!--                    <Spinner-->
+<!--                        android:id="@+id/prompt_type"-->
+<!--                        android:layout_width="fill_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:addStatesFromChildren="false"-->
+<!--                        android:padding="10dp"-->
+<!--                        tools:ignore="SpeakableTextPresentCheck" />-->
+<!--                </TableRow>-->
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:padding="10dp"
+                        android:text="Text:" />
+
+                    <EditText
+                        android:id="@+id/text_prompt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPersonName"
+                        android:padding="10dp"
+                        tools:ignore="TouchTargetSizeCheck"
+                        tools:text="Text" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:padding="10dp"
+                        android:text="Video Keyword:" />
+
+                    <EditText
+                        android:id="@+id/video_prompt"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:padding="10dp"
+                        tools:text="Video Keyword"
+                        android:imeOptions="actionDone"/>
+
+                    <Button
+                        android:id="@+id/video_select"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/save_button_selector"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/videoPath"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:padding="10dp"
+                        android:text="Video Path:" />
+
+                    <TextView
+                        android:id="@+id/video_path"
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPersonName"
+                        android:padding="10dp"
+                        tools:ignore="TouchTargetSizeCheck"
+                        tools:text="Video Path" />
+                </TableRow>
+
+
+<!--                <TableRow-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/textView4"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="0"-->
+<!--                        android:padding="10dp"-->
+<!--                        android:text="Audio Keyword:" />-->
+
+<!--                    <EditText-->
+<!--                        android:id="@+id/audio_prompt"-->
+<!--                        android:layout_width="100dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:ems="10"-->
+<!--                        android:imeOptions="actionDone"-->
+<!--                        android:inputType="textPersonName"-->
+<!--                        android:minHeight="48dp"-->
+<!--                        android:padding="10dp"-->
+<!--                        tools:text="Audio Keyword" />-->
+
+<!--                    <Button-->
+<!--                        android:id="@+id/audio_select"-->
+<!--                        android:layout_width="50dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_marginRight="5dp"-->
+<!--                        android:background="@drawable/save_button_selector"-->
+<!--                        tools:ignore="SpeakableTextPresentCheck" />-->
+<!--                </TableRow>-->
+<!--                <TableRow-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent">-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/audioPath"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_weight="0"-->
+<!--                        android:padding="10dp"-->
+<!--                        android:text="Video Path:" />-->
+
+<!--                    <TextView-->
+<!--                        android:id="@+id/audio_path"-->
+<!--                        android:layout_width="100dp"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_weight="1"-->
+<!--                        android:ems="10"-->
+<!--                        android:imeOptions="actionDone"-->
+<!--                        android:inputType="textPersonName"-->
+<!--                        android:padding="10dp"-->
+<!--                        tools:ignore="TouchTargetSizeCheck"-->
+<!--                        tools:text="Audio Path" />-->
+<!--                </TableRow>-->
+            </TableLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:scrollbarStyle="insideOverlay">
+                <TextView
+                    android:id="@+id/previewLabel"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Camera Preview"
+                    android:textAllCaps="false"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textSize="24sp"
+                    android:imeOptions="actionDone" />
+
+                <Button
+                    android:id="@+id/saveInfo"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:text="Save"
+                    android:textColor="@color/mdtp_white"
+                    android:background="@drawable/button_selector"/>
+            </LinearLayout>
+            <TextureView
+                android:id="@+id/preview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/capture"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Capture Sample" />
+
+        </LinearLayout>
+</ScrollView>
+

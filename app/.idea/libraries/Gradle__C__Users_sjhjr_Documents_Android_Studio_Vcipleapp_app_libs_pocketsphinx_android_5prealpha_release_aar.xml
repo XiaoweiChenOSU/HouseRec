@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: C./Users/sjhjr/Documents/Android Studio/Vcipleapp/app/libs/pocketsphinx-android-5prealpha-release.aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/db9a318684f017c089e15f7002723fa2/jetified-pocketsphinx-android-5prealpha-release/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/db9a318684f017c089e15f7002723fa2/jetified-pocketsphinx-android-5prealpha-release/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/db9a318684f017c089e15f7002723fa2/jetified-pocketsphinx-android-5prealpha-release/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

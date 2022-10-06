@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: io.github.skyhacker2:sqliteonweb:1.0.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/00511eb3d02d3dbfa7ac77a4597e264d/jetified-sqliteonweb-1.0.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/00511eb3d02d3dbfa7ac77a4597e264d/jetified-sqliteonweb-1.0.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/00511eb3d02d3dbfa7ac77a4597e264d/jetified-sqliteonweb-1.0.2/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.skyhacker2/sqliteonweb/1.0.2/a7a1b4250e60160d033429445393f794d0674a73/sqliteonweb-1.0.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.skyhacker2/sqliteonweb/1.0.2/7a493e26a5a4f2615b923175cec824af052e7958/sqliteonweb-1.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

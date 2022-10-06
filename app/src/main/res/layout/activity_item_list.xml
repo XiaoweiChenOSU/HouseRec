@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Layout.ItemListActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        <LinearLayout
+            style="@android:style/ButtonBar"
+
+            android:layout_width="match_parent"
+            android:weightSum="6"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/thislayouname"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/secondary_text"
+                android:textSize="28sp"
+                android:layout_weight="3"
+                />
+
+            <Button
+                android:id="@+id/layout"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/image_search"
+                android:layout_weight="1"/>
+            // app:layout_anchor="@+id/toolbar"
+            />
+
+            <Button
+                android:id="@+id/addPhotoLayout"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/layout_button_selector"
+                app:layout_anchor="@+id/toolbar"
+                android:layout_weight="1"/>
+
+            <Button
+                android:id="@+id/eraseLocation"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/ic_baseline_cancel"
+
+                app:layout_anchorGravity="right"
+                android:layout_weight="1"/>
+            //app:layout_anchor="@+id/toolbar"
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+<!--        <com.okstate.VisualComputingandImageProcessingLab.HouseRec.Utility.RecyclerViewEmptySupport-->
+<!--            android:id="@+id/toDoLayoutView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            app:layout_behavior="@string/appbar_scrolling_view_behavior" />-->
+
+        <ImageView
+            android:id="@+id/layoutBackground"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <TextView
+            android:id="@+id/textHint"
+            android:text="@string/no_layout"
+            android:textColor="@color/secondary_text"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible"/>
+
+    </FrameLayout>
+
+
+
+
+
+    <!--    <FrameLayout-->
+<!--        android:id="@+id/frameLayout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        app:layout_behavior="@string/appbar_scrolling_view_behavior">-->
+
+<!--        <include layout="@layout/item_list_test" />-->
+<!--    </FrameLayout>-->
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

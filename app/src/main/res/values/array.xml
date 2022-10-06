@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="local_video">
+        <item>sample</item>
+        <item>sample_2</item>
+        <item>sample_3</item>
+        <item>test</item>
+    </string-array>
+</resources>

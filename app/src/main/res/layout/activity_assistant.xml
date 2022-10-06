@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main.MainActivity">
+
+
+
+        <FrameLayout
+            android:id="@+id/cameraContainer"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:background="@android:color/transparent"
+            android:visibility="visible"
+            tools:context="com.okstate.VisualComputingandImageProcessingLab.HouseRec.CameraActivityBackupRT">
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/main_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="100dp"
+            android:fitsSystemWindows="false"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:ignore="NotSibling,ObsoleteLayoutParam" />
+
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_marginTop="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            />
+
+        <ImageButton
+            android:id="@+id/resume_play"
+            android:layout_width="48dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="100dp"
+            android:src="@drawable/ic_baseline_autorenew"
+            android:background="@android:color/transparent"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/close_play"
+            android:layout_width="48dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="150dp"
+            android:layout_marginBottom="0dp"
+            android:src="@drawable/ic_baseline_close"
+            android:background="@android:color/transparent"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/detected_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="40dp"
+            android:textColor="#16F529"
+            android:text="Welcome!" />
+
+
+        <ImageView
+            android:id="@+id/location_icon"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/location"
+            android:visibility="invisible"
+            />
+
+
+        <TextView
+            android:id="@+id/detected_item_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textColor="#16F529"
+            android:text=""
+
+            android:textSize="40dp" />
+
+        <TextView
+            android:id="@+id/detected_object_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="240dp"
+            android:text=""
+            android:textColor="#fc1740"
+            android:textSize="40dp" />
+
+
+</RelativeLayout>

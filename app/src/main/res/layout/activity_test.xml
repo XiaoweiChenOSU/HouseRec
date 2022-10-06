@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:gravity="center"
+              android:fillViewport="true"
+              android:layout_height="match_parent">
+
+    <!--<include layout="@layout/base_toolbar"/>-->
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/myCoordinatorLayout"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/toDoEmptyView"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/home" />
+
+
+
+            <Button
+                android:id="@+id/TestName"
+                android:text="Test"
+                android:textColor="@color/secondary_text"
+                android:textSize="56sp"
+                android:paddingTop="4dp"
+                android:paddingBottom="10dp"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:background="@drawable/button_selector"
+                android:visibility="visible"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+
+        <!--<include layout="@layout/base_toolbar"/>-->
+
+
+        <!--</android.support.design.widget.AppBarLayout>-->
+
+
+        <com.okstate.VisualComputingandImageProcessingLab.HouseRec.Utility.RecyclerViewEmptySupport
+            android:id="@+id/toDoRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_anchor="@+id/toDoEmptyView"
+            app:layout_anchorGravity="center"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</RelativeLayout>

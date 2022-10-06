@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.AsynctaskCoffee:YoutubeFloatingVideo:0.0.5@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b9813a48571c69d47a1ac41dfce82e06/jetified-YoutubeFloatingVideo-0.0.5/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b9813a48571c69d47a1ac41dfce82e06/jetified-YoutubeFloatingVideo-0.0.5/jars/libs/YouTubeAndroidPlayerApi.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b9813a48571c69d47a1ac41dfce82e06/jetified-YoutubeFloatingVideo-0.0.5/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b9813a48571c69d47a1ac41dfce82e06/jetified-YoutubeFloatingVideo-0.0.5/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.AsynctaskCoffee/YoutubeFloatingVideo/0.0.5/11b44146b12a6896217c00a244ceadbf50dd3e92/YoutubeFloatingVideo-0.0.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

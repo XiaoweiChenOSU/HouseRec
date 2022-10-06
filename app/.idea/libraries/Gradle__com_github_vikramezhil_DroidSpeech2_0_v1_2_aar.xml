@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.vikramezhil:DroidSpeech2.0:v1.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/779ae80fdedcc2c9b6aec6631636fc0e/jetified-DroidSpeech2.0-v1.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/779ae80fdedcc2c9b6aec6631636fc0e/jetified-DroidSpeech2.0-v1.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/779ae80fdedcc2c9b6aec6631636fc0e/jetified-DroidSpeech2.0-v1.2/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

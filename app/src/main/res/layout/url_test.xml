@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Layout.ItemDetailActivity"
+    tools:ignore="MergeRootFrame">
+
+    <EditText
+        android:id="@+id/url_prompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:imeOptions="actionDone"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+
+        app:layout_anchorGravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/item_url"
+        app:layout_constraintStart_toEndOf="@+id/item_url"
+        app:layout_constraintTop_toTopOf="@+id/item_url"
+        tools:text="URL" />
+
+    <TextView
+        android:id="@+id/item_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="URL"
+        android:textSize="25dp"
+
+        app:layout_anchorGravity="start|center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/play_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play"
+        app:layout_constraintBottom_toBottomOf="@+id/url_prompt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/url_prompt"
+        app:layout_constraintTop_toTopOf="@+id/url_prompt" />
+</androidx.constraintlayout.widget.ConstraintLayout>

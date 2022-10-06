@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.HamedTaherpour:floating-layout-android:1.1.5@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e519280854673b1d3c8bb63e70c00938/jetified-floating-layout-android-1.1.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e519280854673b1d3c8bb63e70c00938/jetified-floating-layout-android-1.1.5/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e519280854673b1d3c8bb63e70c00938/jetified-floating-layout-android-1.1.5/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.HamedTaherpour/floating-layout-android/1.1.5/be47c5f610a23426fbf46edd544eff6ece1f01ef/floating-layout-android-1.1.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
